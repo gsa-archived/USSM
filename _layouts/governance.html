@@ -8,9 +8,42 @@ layout: base
   {% include banner.html %}
 
   <section id="main-content">
-    <div class="grid-container padding-top-6 padding-bottom-6">
-      {{ content }}
+    <div class="grid-container">
+      <div class="grid-row">
 
+        <div class="tablet:grid-col">
+          <h1 class="text-primary" style="font-size: 30px;">{{ page.title }}</h1>
+          <div>
+            {{ content }}
+          </div>
+        </div>
+
+        <div id="tabs-1" tabindex="0" role="tabpanel" class="tablet:grid-col">
+          <span>
+            <center><b>Governance &amp; Operating Model</b></center>
+          </span>
+          <img
+            src="{{ site.baseurl }}/assets/images/governance/governance-diagram-1.webp"
+            style="width:400px;padding-left:20px;"
+            alt="Governance and operating model"
+          />
+          <a href="#governance"
+             title="Enlarge"
+             class="image-link usa-button usa-button--secondary margin-top-5">
+            Enlarge
+          </a>
+          <div id="governance" class="white-popup mfp-hide">
+            <img
+              alt="Governance and operating model"
+              src="{{ site.baseurl }}/assets/images/governance/governance-diagram-1.webp"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid-container padding-top-6 padding-bottom-6">
       <a href="{{ site.baseurl }}/governance/"
          class="text-uppercase grid-row flex-row flex-align-center text-semibold padding-top-4"
          title="Back to Governance">
@@ -25,6 +58,7 @@ layout: base
         </div>
       </div>
     </div>
+
   </section>
 </div>
 
