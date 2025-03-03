@@ -1,5 +1,5 @@
 ---
-layout: performance-management
+layout: governance
 title: Governance Ecosystem
 permalink: /governance/
 ---
