@@ -4,7 +4,14 @@ permalink: /governance/
 title: Governance Ecosystem
 img: /assets/images/governance/governance-diagram-1.webp
 ---                 
-                    
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+{% include banner.html width="grid-col-11" offset="grid-offset-1" %}  
+
 <p>The governance and operating model drives collaboration and change management with stakeholders across the federal government to identify solutions that deliver the best value to taxpayers and support efficient government.</p>
 
 <p><strong>The Shared Services Governance Chair</strong></p>
