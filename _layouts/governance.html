@@ -3,18 +3,19 @@ title: "Governance Ecosystem"
 layout: base
 ---
 
-{% comment %}
-Tailored for governance pages. 
-{% endcomment %}
-<div class="pm-content">
-  {% include pm/menu.html 
-    primary_navigation=site.primary_navigation  
-    secondary_navigation=site.secondary_navigation 
-  %}
-  
-  <section id="main-content">
-    {{ content }}
-  </section>
+<div id="main-content" class="council-content">
+  {% include banner.html %}
+
+  <div class="grid-container padding-top-6 padding-bottom-6">
+    <div class="font-merriweather text-light">
+      {{ content }}
+    </div>
+    <a href="{{ site.baseurl }}/governance/"
+       class="text-uppercase grid-row flex-row flex-align-center text-semibold padding-top-4"
+       title="Back to Governance">
+      &#9664; Back to Governance
+    </a>
+  </div>
 
   <div class="grid-container">
     <div class="grid-row grid-gap space-between">
@@ -26,7 +27,7 @@ Tailored for governance pages.
 </div>
 
 {% comment %}
-Optional: console logging for JSON data
+Optional: If you want the same console logging script for JSON data:
 {% endcomment %}
 <script>
   {% if site.url == "http://localhost:4000" %}
@@ -39,3 +40,4 @@ Optional: console logging for JSON data
     console.log("The content on this page can be accessed in JSON format here: " + url);
   {% endif %}
 </script>
+
